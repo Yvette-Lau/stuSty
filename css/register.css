@@ -5,8 +5,8 @@ body{
 	font-family: 'Roboto',sans-serif;
 	font-weight: 100;
 	width: 100%;
-	background: -webkit-linear-gradient(left,#22d686,#24d3d3);
-	background: linear-gradient(to right, #22d686, #24d3d3);
+	background: -webkit-linear-gradient(left,#ff5252,#ffeb3b);
+	background: linear-gradient(to right, #ff5252, #ffeb3b);
 	background-size: 600% 100%;
 	-webkit-animation: regiBG 10s ease infinite;
 	animation:regiBG 20s ease infinite;
