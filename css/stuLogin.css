@@ -158,7 +158,7 @@ label{
 }
 
 
-.panel-login input[type="text"], .panel-login input[type="password"] {
+.panel-login input[type="text"], .panel-login input[type="password"], .panel-login input[type="email"]{
 	height: 45px; 
 	border: 0;
 	font-size: 16px;
@@ -198,6 +198,29 @@ label{
 
 .btn-login:hover,
 .btn-login:focus {
+	color: #fff;
+	background-color: #2D3B55;
+}
+
+
+/*-----------register--------------*/
+
+
+.btn-register{
+	background-color: #E8E9EC;
+	outline: none;
+	color: #2D3B55;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 0px;
+	box-shadow: none;
+}
+
+.btn-register:hover, .btn-register:focus{
 	color: #fff;
 	background-color: #2D3B55;
 }
