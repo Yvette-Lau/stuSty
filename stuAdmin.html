@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>stuAdmin</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css"/>
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/angular.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/stuAdmin.css">
+</head>
+<body>
+	
+	<div class="content-fluid">
+		<div id="content" class="row">
+			<div class="col-md-9 content" id="Admin">
+				<div id="userform">
+					<div class="row">
+						<div class="col-md-3" id="userimage">
+							<i class="fa fa-user-circle fa-5x" aria-hidden="true"></i>
+						</div>
+						<div class="col-md-9" id="userinform">
+							<div class="out-wrapper">
+								<div class="part part-1">
+									<div class="info-wrapper">
+										<div class="detail">
+											<p class="item">
+												<span class="account-name ng-binding">Stu1</span>
+											</p>
+											<p class="item item-mail">
+												<span class="subtitle">电子邮箱：</span>
+												<span class="subdetail ng-binding" data-nag-bing="info.email">123456789@gmial.com</span>
+												<a href="#" data-toggle="modal" data-target="#resetMail">
+													<i class="fa fa-pencil" aria-hidden="true">
+														<span  class="open-modal-btn">修改</span>
+													</i>
+												</a>
+												<i class="fa fa-check-circle-o" aria-hidden="true">
+													<span class="mail-status">已验证</span>
+												</i>
+											</p>
+											<p class="item item-pwd">
+												<span class="sub-title">登录密码：</span>
+												<span class="sub-detail">*******</span>
+												<a href="#" data-toggle="modal" data-target="#resetPwd">
+													<i class="fa fa-pencil" aria-hidden="true">
+														<span  class="open-modal-btn">修改</span>
+													</i>
+												</a>
+											</p>
+											<p class="item item-date">
+												<span class="subtitle">创建日期：</span>
+												<span class="sub-detail">2008-8-8 8:08:08</span>
+											</p>
+										</div>
+									</div>
+								</div>
+
+<!-- --------------------------------------------------- -->
+
+								<div class="part part-2">
+									<div class="title-wrapper">
+										<span class="text">个人信息
+											<a href="#" data-toggle="modal" data-target="#resetUserInform">
+												<i class="fa fa-pencil" aria-hidden="true" id="ui_fa-pencil">
+													<span  class="open-modal-btn">修改</span>
+												</i>
+											</a>
+										</span>
+										<hr class="stuinform">
+									</div>
+									<div class="infor-wrapper">
+										<p class="item">
+											<span class="sub-title" id="firstTitle">真实姓名：</span>
+											<span class="sub-detail">Stu1</span>
+										</p>
+										<p class="item">
+											<span class="sub-title">班级：</span>
+											<span class="subdetail">外语1班</span>
+										</p>
+										<p class="item">
+											<span class="subtitle">QQ号：</span>
+											<span class="sub-detail">12345678</span>
+										</p>
+										<p class="item">
+											<span class="subtitle">联系电话：</span>
+											<span class="sub-detail">1111111111</span>
+										</p>	
+									</div>
+								</div>
+<!-- ------------------------------------------------------------ -->
+								
+								<div class="part part-3">
+									<div class="title-wrapper">
+										<span class="text">作文发表</span>
+										<hr class="stuinform">
+									</div>
+									<div class="info-wrapper">
+										<p class="item">
+											<span class="subtitle" id="firstTitle">
+												优秀作文
+											</span>
+											<span class="sub-detail">
+												<ul>
+													<li><span class="essay-title"><a href="#"> 
+														What problems will this cause for individuals and society in  average life expectancy is increasing in the developed world?
+													</a></span></li>
+													<li><span class="essay-title"><a href="#">
+														Should governments give more financial support to local film industries?
+													</a></span></li>
+													<li><span class="essay-title"><a href="#">
+														Discuss about that governments should give financial support to creative artists such as painters and musicians?
+													</a></span></li>
+													<li><span class="essay-title"><a href="#">
+														Explain some of the ways in which humans are damaging the environment.
+													</a></span></li>
+													<li><span class="essay-title"><a href="#">
+														Why is it difficult to define happiness?
+													</a></span></li>
+											</ul>
+											</span>
+										</p>
+									</div>
+								</div>
+
+
+<!-- -------------------------------------------------------------------------- -->
+
+								<div class="modal fade" id="resetMail" tabindex="-1" role="dialog">
+									<div class="modal-dialog" role="resetMail">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal">
+													<span aria-hidden="true">&times</span>
+												</button>
+												<h4 class="modal-title">修改邮箱</h4>
+											</div>
+											<div class="modal-body">
+												<p>新的电子邮件地址</p>
+												<input type="mail" id="mail" name="email" tabindex="1" class="form-control" placeholder="Email Adreess" value="">
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+												<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+<!-- ---------------------------------------------------------------- -->
+								<div class="modal fade" id="resetPwd" tabindex="-1" role="dialog">
+									<div class="modal-dialog" role="resetMail">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal">
+													<span aria-hidden="true">&times</span>
+												</button>
+												<h4 class="modal-title">重置密码</h4>
+											</div>
+											<div class="modal-body">
+												<p>当前密码</p>
+												<input type="password" id="pastPassword" name="pastPassword" tabindex="2" class="form-control" placeholder="pastPassword">
+												<p>新的密码</p>
+												<input type="password" id="newPassword" name="newPassword" tabindex="2" class="form-control" placeholder="newPassword">
+												<p>确认密码</p>
+												<input type="password" id="confirm-password" name="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+												<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+<!-- ---------------------------------------------------------------------- -->
+								<div class="modal fade" id="resetUserInform" tabindex="-1" role="dialog">
+									<div class="modal-dialog" role="resetMail">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal">
+													<span aria-hidden="true">&times</span>
+												</button>
+												<h4 class="modal-title">修改个人信息</h4>
+											</div>
+											<div class="modal-body">
+												<p>真实姓名</p>
+												<input type="text" id="username" name="username" tabindex="1" class="form-control" placeholder="Username" value="">
+												<p>班级</p>
+												<input type="text" id="className" name="className" tabindex="1" class="form-control" placeholder="className" value="">
+												<p>QQ号</p>
+												<input type="text" id="QQid" name="QQid" tabindex="1" class="form-control" placeholder="QQid" value="">
+												<p>QQ号</p>
+												<input type="text" id="QQid" name="QQid" tabindex="1" class="form-control" placeholder="QQid" value="">
+												<p>联系电话</p>
+												<input type="text" id="contactphoneNum" name="contactphoneNum" tabindex="1" class="form-control" placeholder="contactphoneNum" value="">
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+												<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
