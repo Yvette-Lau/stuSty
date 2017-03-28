@@ -5,7 +5,7 @@
 	padding-right: 0px;
 	border:1px solid grey;
 	width: 960px;
-	height: 750px;
+	height: 730px;
 	position: relative;
 
 }
@@ -166,4 +166,59 @@ a:active, a:hover{
 	position: relative;
 	top: 15px;
 	left:240px;
+}
+
+.section-pager{
+	position: absolute;
+	bottom: 7px;
+	width: 920px;
+	height: 60px;
+	/*border: 1px solid pink;*/
+}
+
+.page-in-all{
+	position: absolute;
+	top:5px;
+	left:6px;
+	width: 900px;
+	height: 55px;
+	/*border: 1px solid red;*/
+}
+
+.jpager-left{
+	position: relative;
+	top: 16px;
+	left: 750px;
+	width: 134px;
+	height: 27px;
+	font-size: 1em;
+	color: #1b75bb;
+	margin: 0;
+	padding:2px;
+	/*border: 1px solid grey;*/
+}
+
+.jpager-right{
+	position: relative;
+	bottom: 25px;
+	left: 300px;
+	width: 450px;
+	height: 50px;
+	padding: 5px;
+	margin: 0;
+	/*border: 1px solid black;*/
+}
+
+.inner{
+	position: relative;
+	bottom:3px;
+	left: 160px;
+	width: 275px;
+	height: 43px;
+	margin: 0;
+	padding: 3px;
+	/*border: 1px solid green;*/
+}
+.pagination{
+	margin: 0;
 }
