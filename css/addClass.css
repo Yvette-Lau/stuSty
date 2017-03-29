@@ -1,0 +1,55 @@
+.content{
+	position: relative;
+	width: 960px;
+	height: 730px;
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid grey;
+}
+
+
+.section-head{
+/*	position: absolute;
+	left: 430px;*/
+	height: 60px;
+	/*border: 1px solid red;*/
+}
+
+#headRow{
+	margin-top: 5px;
+	margin-left: 60px;
+	padding-top: 10px;
+	/*border: 1px solid pink;*/
+}
+.filters{
+	/*position: absolute;
+	top:20px;
+	left: 20px;*/
+	font-size: 1.05em;
+}
+
+.selectpicker{
+/*	position: absolute;
+	top:15px;
+	left: 95px;*/
+	width: 150px;
+	height: 30px;
+	border-radius: 5px; 
+}
+
+.serchcondition{
+	/*position: absolute;
+	top:15px;
+	left: 255px;*/
+	height: 30px;
+}
+	
+/*.btn-success{
+	position: absolute;
+	top:13px;
+	left: 440px;
+}*/
+
+.section-table{
+	position: relative;
+}
