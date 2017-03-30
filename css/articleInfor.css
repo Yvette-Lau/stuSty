@@ -1,7 +1,7 @@
 .content{
 	position: relative;
 	width: 960px;
-	height: 1200px;
+	/*height: 1600px;*/
 	margin: 20px;
 	padding: 20px;
 	border: 1px solid grey;
@@ -9,7 +9,7 @@
 
 .titleModle{
 	width: 900px;
-	height: 39px;
+	/*height: 39px;*/
 	padding: 4px;
 	/*border: 1px solid red;*/
 }
@@ -36,8 +36,8 @@
 	margin:1px 0;
 	padding: 3px;
 	width: 900px;
-	height: 110px;
-	/*border: 1px solid grey;*/
+	/*height: 110px;*/
+	border: 1px solid grey;
 }
 
 #descrName{
@@ -47,7 +47,7 @@
 
 .descrShow{
 	width: 888px;
-	height: 70px;
+	/*height: 70px;*/
 	padding-left: 4px;
 	/*border: 1px solid orange;*/
 	background-color: #FAFAD2;
@@ -59,9 +59,83 @@
 
 }
 
+.articleModle{
+	width: 900px;
+	/*height:1200px;*/
+	border: 1px solid red;
+	padding: 0 3px;
+}
+
+#articleName{
+	font-size: 1.3em;
+	margin-bottom: 0px;
+}
+
+.articleShow{
+	margin: 5px 15px;
+	width: 860px;
+	/*height: 1150px;*/
+	border: 1px solid orange;
+	background-color: #F0FFF0;
+}
+
+#article{
+	margin-top: 5px;
+	margin-left: 5px;
+	text-indent: 31px;
+	font-family: 'Tahoma', 'Verdana';
+}
+
+.commentModel{
+	margin-top: 3px;
+	width: 900px;
+	border: 1px solid red;
+	padding: 0 3px;
+}
+
+#commentName{
+	font-size: 1.3em;
+	margin-bottom: 0px;
+}
+
+.commentShow{
+	margin: 5px 15px;
+	width: 860px;
+	/*height: 1150px;*/
+	border: 1px solid orange;
+	background-color: #FDF5E6;
+}
+
+#comment{
+	margin-top: 5px;
+	margin-left: 5px;
+	font-family: 'Tahoma', 'Verdana';
+}
+
+.marksModel{
+
+	margin-top: 3px;
+	width: 190px;
+	border: 1px solid red;
+	padding: 0 3px;
+}
 
 
+#marksName{
+	font-size: 1.3em;
+	margin-bottom: 0px;
+}
 
+.marksShow{
+	width: 80px;
+	border: 1px solid orange;
+}
 
-
-
+#marks{
+	color: red;
+	font-weight: 700;
+	font-size: 3em;
+	margin-top: 1px;
+	margin-left: 1px;
+	font-family: 'Tahoma', 'Verdana';
+}
