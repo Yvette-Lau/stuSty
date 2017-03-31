@@ -68,15 +68,23 @@
 
 #articleName{
 	font-size: 1.3em;
-	margin-bottom: 0px;
+	margin-bottom: 8px;
 }
 
+#clockPro{
+	color: #79CDCD;
+
+}
+
+#progBar{
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
 .articleShow{
-	margin: 5px 15px;
+	margin: 0 15px;
 	width: 860px;
 	/*height: 1150px;*/
 	/*border: 1px solid orange;*/
-	background-color: #F0FFF0;
 }
 
 #article{
@@ -84,4 +92,5 @@
 	margin-left: 5px;
 	text-indent: 31px;
 	font-family: 'Tahoma', 'Verdana';
+	
 }

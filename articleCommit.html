@@ -29,10 +29,46 @@
 
 		<div class="articleModle">
 			<label for="articleName" id="articleName">我的作文：</label>
+			<div class="row">
+				<div class="col-md-1">
+					<div class="row">
+						<div class="col-md-5 col-md-offset-7">
+							<i class="fa fa-clock-o fa-2x" aria-hidden="true" id="clockPro"></i>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-11">
+					<div class="row">
+						<div class="col-md-11">
+							<div class="progress progress-striped active" id="progBar">
+								<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+									<span class="sr-only">40%完成</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
 			<div class="articleShow">
-				
+				<form action="" role="form">
+					<div class="form-group">
+						<textarea name="article" id="article" cols="30" rows="40" class="form-control">
+						</textarea>
+					</div>
+				</form>
 			</div>
 		</div>
+		
+		<div class="submitModle">
+			<div class="row">
+				<div class="col-md-2 col-md-offset-10">
+					<button type="button" class="btn btn-success">提交</button>
+				</div>
+			</div>
+		</div>
+
+
 	</div>
 </body>
 </html>
