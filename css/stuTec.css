@@ -1,0 +1,39 @@
+.center-content{
+	border: 1px solid black;
+	margin: 20px;
+	padding-top: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 1px;
+}
+
+.fa-search{
+	color: #404040;
+}
+
+.thumbnail{
+	display: inline-block;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.img-circle{
+	width: 80px;
+	height: 80px;
+}
+
+#TecName{
+	text-align: center;
+	font-size: 1.5em;
+	color: #707070;
+}
+
+.thumbnailBody{
+	background-color: #FAFAD2;
+	padding-top: 5px;
+	padding-bottom: 8px;
+}
+
+#pageNav{
+	margin: 0 ;
+}
