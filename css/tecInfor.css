@@ -1,0 +1,35 @@
+.center-content{
+	border: 1px solid black;
+	margin: 20px;
+	padding-top: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 1px;
+}
+
+.img-circle{
+	width: 100px;
+	height: 100px;
+}
+
+#bascInforMod, #tecCVrMod{
+	margin-top: 20px;
+}
+
+.bascInforInner{
+	padding: 0;
+}
+
+.fa-check-circle-o{
+	color: #53b983;
+}
+
+#cvIntrd{
+	margin-top: 20px;
+}
+
+#sectionClass{
+	padding-left: 80px;
+	margin-right: 40px;
+}
+
