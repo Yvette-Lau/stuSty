@@ -1,0 +1,10 @@
+1.stuLogin.html: 学生登录页面
+2.stuAdmin.html: 查看学生个人信息
+3.stuTec.html:   该学生的所有老师列表
+4.tecInfor.html: 查看该老师信息
+5.addClass.html: 加入班级
+6.stuClass.html: 该学生所有班级
+7.classInfor.html： 查看班级信息
+8.stuTopic.html:   该学生所有未完成作文题目
+9.articleCommit.html: 作文提交
+10.articleInfor.html:  查看批改后的作文信息

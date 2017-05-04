@@ -6,6 +6,9 @@
 	<link rel="stylesheet" href="./css/bootstrap.min.css"/>
 	<script src="./js/jquery.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/jquery.js"></script>
+	<script src="./js/jquery.validate.min.js"></script>
+	<script src="./js/articleCommit.js"></script>
 	<link rel="stylesheet" href="./css/articleCommit.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 </head>
@@ -51,23 +54,20 @@
 			</div>
 	
 			<div class="articleShow">
-				<form action="" role="form">
+				<form action="" role="form" id="articleArea">
 					<div class="form-group">
-						<textarea name="article" id="article" cols="30" rows="40" class="form-control">
-						</textarea>
+						<textarea name="article" id="article" class="ckeditor" cols="120" rows="40"  placeholder="请输入您的作文..."></textarea>
+					</div>
+					<div class="submitModle">
+						<div class="row">
+							<div class="col-md-2 col-md-offset-10">
+								<button type="submit" class="btn btn-success">提交</button>
+							</div>
+						</div>
 					</div>
 				</form>
 			</div>
 		</div>
-		
-		<div class="submitModle">
-			<div class="row">
-				<div class="col-md-2 col-md-offset-10">
-					<button type="button" class="btn btn-success">提交</button>
-				</div>
-			</div>
-		</div>
-
 
 	</div>
 </body>

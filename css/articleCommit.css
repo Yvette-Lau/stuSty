@@ -94,3 +94,11 @@
 	font-family: 'Tahoma', 'Verdana';
 	
 }
+
+li {
+	list-style-type: none;
+}
+
+li .error{
+	color: red;
+}

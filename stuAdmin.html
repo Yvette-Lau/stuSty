@@ -7,6 +7,9 @@
 	<script src="./js/jquery.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
 	<script src="./js/angular.min.js"></script>
+	<script src="./js/jquery.js"></script>
+	<script src="./js/jquery.validate.min.js"></script>
+	<script src="./js/stuAdmin.js"></script>
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 	<link rel="stylesheet" href="./css/stuAdmin.css">
 </head>
@@ -140,21 +143,25 @@
 												</button>
 												<h4 class="modal-title">修改邮箱</h4>
 											</div>
-											<div class="modal-body">
-												<p>新的电子邮件地址</p>
-												<input type="mail" id="mail" name="email" tabindex="1" class="form-control" placeholder="Email Adreess" value="">
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
-												<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-											</div>
+											<form action="#" id="resetMailForm" method="post" role="form">
+												<div class="modal-body">
+													<p>新的电子邮件地址</p>
+													<div class="form-group">
+														<input type="email" id="email" name="email" tabindex="1" class="form-control" placeholder="Email Adreess" value="">
+													</div>
+												</div>
+												<div class="modal-footer">
+													<button type="submit" class="btn btn-primary" data-dismiss="modal">确定</button>
+													<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+												</div>
+											</form>
 										</div>
 									</div>
 								</div>
 
 <!-- ---------------------------------------------------------------- -->
 								<div class="modal fade" id="resetPwd" tabindex="-1" role="dialog">
-									<div class="modal-dialog" role="resetMail">
+									<div class="modal-dialog" rolef="resetMail">
 										<div class="modal-content">
 											<div class="modal-header">
 												<button type="button" class="close" data-dismiss="modal">
@@ -162,18 +169,26 @@
 												</button>
 												<h4 class="modal-title">重置密码</h4>
 											</div>
-											<div class="modal-body">
-												<p>当前密码</p>
-												<input type="password" id="pastPassword" name="pastPassword" tabindex="2" class="form-control" placeholder="pastPassword">
-												<p>新的密码</p>
-												<input type="password" id="newPassword" name="newPassword" tabindex="2" class="form-control" placeholder="newPassword">
-												<p>确认密码</p>
-												<input type="password" id="confirm-password" name="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
-												<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-											</div>
+											<form action="#" id="resetPasswordForm" method="post" role="form">
+												<div class="modal-body">
+													<p>当前密码</p>
+													<div class="form-group">
+														<input type="password" id="pastPassword" name="pastPassword" tabindex="2" class="form-control" placeholder="pastPassword">
+													</div>
+													<p>新的密码</p>
+													<div class="form-group">
+														<input type="password" id="newPassword" name="newPassword" tabindex="2" class="form-control" placeholder="newPassword">
+													</div>
+													<p>确认密码</p>
+													<div class="form-group">
+														<input type="password" id="confirm_password" name="confirm_password" tabindex="2" class="form-control" placeholder="Confirm Password">
+													</div>
+												</div>
+												<div class="modal-footer">
+													<button type="submit" class="btn btn-primary" data-dismiss="modal">确定</button>
+													<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+												</div>
+											</form>
 										</div>
 									</div>
 								</div>
@@ -188,22 +203,34 @@
 												</button>
 												<h4 class="modal-title">修改个人信息</h4>
 											</div>
-											<div class="modal-body">
-												<p>真实姓名</p>
-												<input type="text" id="username" name="username" tabindex="1" class="form-control" placeholder="真实姓名" value="">
-												<p>所在学校</p>
-												<input type="text" id="school" name="school" tabindex="1" class="form-control" placeholder="学校名" value="">
-												<p>班级</p>
-												<input type="text" id="className" name="className" tabindex="1" class="form-control" placeholder="班级名" value="">
-												<p>QQ号</p>
-												<input type="text" id="QQid" name="QQid" tabindex="1" class="form-control" placeholder="QQ号" value="">
-												<p>联系电话</p>
-												<input type="text" id="contactphoneNum" name="contactphoneNum" tabindex="1" class="form-control" placeholder="联系电话" value="">
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
-												<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-											</div>
+											<form action="#" id="resetUserForm" method="post" role="form">
+												<div class="modal-body">
+													<p>真实姓名</p>
+													<div class="form-group">
+														<input type="text" id="username" name="username" tabindex="1" class="form-control" placeholder="真实姓名" value="">
+													</div>
+													<p>所在学校</p>
+													<div class="form-group">
+														<input type="text" id="school" name="school" tabindex="1" class="form-control" placeholder="学校名" value="">
+													</div>
+													<p>班级</p>
+													<div class="form-group">
+														<input type="text" id="className" name="className" tabindex="1" class="form-control" placeholder="班级名" value="">
+													</div>
+													<p>QQ号</p>
+													<div class="form-group">
+														<input type="text" id="QQ" name="QQ" tabindex="1" class="form-control" placeholder="QQ号" value="">
+													</div>
+													<p>联系电话</p>
+													<div class="form-group">
+														<input type="text" id="contactphoneNum" name="contactphoneNum" tabindex="1" class="form-control" placeholder="联系电话" value="">
+													</div>		
+												</div>
+												<div class="modal-footer">
+													<button type="submit" class="btn btn-primary" data-dismiss="modal">确定</button>
+													<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+												</div>
+											</form>
 										</div>
 									</div>
 								</div>

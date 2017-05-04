@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 	$("#register-form").validate({
 		errorContainer: "div.error",
-		errorLabelContainer: $("#signupForm div.error"),
+		errorLabelContainer: $("#register-form div.error"),
 		wrapper: "li",
 		rules:{
 			username:{
