@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="robots" content="noindex, nofollow">
 	<title>提交作文</title>
 	<link rel="stylesheet" href="./css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="./css/articleCommit.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 	<script src="./js/jquery.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
 	<script src="./js/jquery.js"></script>
 	<script src="./js/jquery.validate.min.js"></script>
 	<script src="./js/articleCommit.js"></script>
-	<link rel="stylesheet" href="./css/articleCommit.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	<script src="./js/ckeditor/ckeditor.js"></script>
+	
 </head>
 <body>
 	<div class="content">
@@ -56,7 +59,8 @@
 			<div class="articleShow">
 				<form action="" role="form" id="articleArea">
 					<div class="form-group">
-						<textarea name="article" id="article" class="ckeditor" cols="120" rows="40"  placeholder="请输入您的作文..."></textarea>
+						<textarea name="article" id="article" cols="40" rows="140"  placeholder="请输入您的作文...">
+						</textarea>
 					</div>
 					<div class="submitModle">
 						<div class="row">
@@ -68,7 +72,14 @@
 				</form>
 			</div>
 		</div>
-
 	</div>
+
+	<script>
+		CKEDITOR.replace( 'article', {
+			uiColor: '#CCEAEE',
+			height: 600,
+		} );
+	</script>
+
 </body>
 </html>
